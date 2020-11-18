@@ -19,8 +19,9 @@ for image in images:
             
             #Keep the aspect ration
             re = cv2.resize(curr_img, (int(curr_img.shape[1]/1.5), int(curr_img.shape[0]/1.5)))
+            
+            #Just for show..
             cv2.imshow("checking", re)
-
             cv2.waitKey(500)
             cv2.destroyAllWindows()
 
